@@ -29,5 +29,6 @@ npm test -- --reporter tap
 
 - [What's new in TypeScript](https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript)
 - [VSCode updates](http://code.visualstudio.com/Updates)
+- [Debugging with VSCode](http://code.visualstudio.com/docs/editor/debugging)
 - [typings doc](https://github.com/typings/typings/tree/master/docs)
 - [All JS libraries should be authored in TypeScript](http://staltz.com/all-js-libraries-should-be-authored-in-typescript.html)
