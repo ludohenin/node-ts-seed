@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "command": "tsc",
+  "isShellCommand": true,
+  "tasks": [
+    {
+      "taskName": "build-watch",
+      "suppressTaskName": true,
+      "args": ["-w"],
+      "showOutput": "always",
+      "isWatching": true,
+      "isBuildCommand": true,
+      "problemMatcher": ["$tsc-watch"]
+    },
+    {
+      "taskName": "build-single",
+      "suppressTaskName": true,
+      "args": [],
+      "showOutput": "always",
+      "isWatching": true
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "node-ts-seed",
+  "version": "0.0.0",
+  "description": "Simple seed for your NodeJS projects made with typescript.",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ludohenin/node-ts-seed"
+  },
+  "scripts": {
+    "clean.dist": "rimraf dist",
+    "test": "mocha --compilers ts:ts-node/register",
+    "tsc": "tsc",
+    "typings": "typings"
+  },
+  "keywords": [
+    "typescript",
+    "tsc",
+    "node",
+    "nodejs",
+    "seed"
+  ],
+  "author": "ludohenin <ludovic.henin@yahoo.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "rimraf": "^2.5.2",
+    "ts-node": "^0.7.3",
+    "tslint": "^3.10.2",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4"
+  }
+}
