@@ -7,9 +7,17 @@ Simple seed for your NodeJS projects made with typescript.
 ```bash
 git clone https://github.com/ludohenin/node-ts-seed.git my-project-folder
 cd my-project-folder
+rm -rf .git
+git init
 npm install
 
 # Enjoy!
+```
+
+__Files to update:__
+```
+- package.json (name, author, repository ...)
+- typings.json (name)
 ```
 
 ## Features
