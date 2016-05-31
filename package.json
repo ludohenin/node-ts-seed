@@ -9,7 +9,7 @@
   },
   "scripts": {
     "clean.dist": "rimraf dist",
-    "test": "mocha --compilers ts:ts-node/register",
+    "test": "mocha test/specs --compilers ts:ts-node/register",
     "tsc": "tsc",
     "typings": "typings"
   },
