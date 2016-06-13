@@ -8,8 +8,8 @@
     "url": "https://github.com/ludohenin/node-ts-seed"
   },
   "scripts": {
-    "build": "rimraf dist && tslint && tsc -p ./tsconfig.src.json",
-    "lint": "tslint",
+    "build": "rimraf dist && npm run lint && tsc -p ./tsconfig.src.json",
+    "lint": "tslint **/*.ts",
     "test": "mocha tests --compilers ts:ts-node/register --colors",
     "tsc": "tsc",
     "typings": "typings"
