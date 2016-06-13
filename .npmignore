@@ -1,0 +1,6 @@
+node_modules
+typings
+.vscode
+dev
+manual_typings
+src
