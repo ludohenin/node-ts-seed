@@ -6,5 +6,5 @@ export function getPackageVersion() {
   const rawPkg = readFileSync(join(cwd, 'package.json')).toString();
   const pkg = JSON.parse(rawPkg);
 
-  return pkg.version || 'could not read the version.';
+  return pkg.version || 'no version';
 }

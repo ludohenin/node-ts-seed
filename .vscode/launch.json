@@ -2,12 +2,15 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "debug",
+      "name": "debug-tests",
       "type": "node",
       "request": "launch",
-      "program": "${workspaceRoot}/dist/index.js",
+      "program": "${workspaceRoot}/node_modules/.bin/_mocha",
       "stopOnEntry": false,
-      "args": [],
+      "args": [
+        "--colors",
+        "./dev/tests"
+      ],
       "cwd": "${workspaceRoot}",
       "preLaunchTask": null,
       "runtimeExecutable": null,
@@ -19,7 +22,7 @@
       },
       "externalConsole": false,
       "sourceMaps": true,
-      "outDir": "${workspaceRoot}/dist"
+      "outDir": "${workspaceRoot}/dev"
     }
   ]
 }

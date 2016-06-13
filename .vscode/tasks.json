@@ -4,7 +4,7 @@
   "isShellCommand": true,
   "tasks": [
     {
-      "taskName": "build-watch",
+      "taskName": "build",
       "suppressTaskName": true,
       "args": ["-w"],
       "showOutput": "always",
@@ -13,9 +13,9 @@
       "problemMatcher": ["$tsc-watch"]
     },
     {
-      "taskName": "build-single",
+      "taskName": "build-dist",
       "suppressTaskName": true,
-      "args": [],
+      "args": ["-p", "tsconfig.src.json"],
       "showOutput": "always",
       "isWatching": true
     }

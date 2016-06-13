@@ -8,8 +8,9 @@
     "url": "https://github.com/ludohenin/node-ts-seed"
   },
   "scripts": {
-    "clean.dist": "rimraf dist",
-    "test": "mocha test/specs --compilers ts:ts-node/register",
+    "build": "rimraf dist && tslint && tsc -p ./tsconfig.src.json",
+    "lint": "tslint",
+    "test": "mocha tests --compilers ts:ts-node/register --colors",
     "tsc": "tsc",
     "typings": "typings"
   },
@@ -18,7 +19,10 @@
     "tsc",
     "node",
     "nodejs",
-    "seed"
+    "seed",
+    "starter",
+    "vscode",
+    "debugging"
   ],
   "author": "ludohenin <ludovic.henin@yahoo.com>",
   "license": "MIT",

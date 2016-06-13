@@ -1,9 +1,8 @@
-
 {
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
-    "outDir": "dev",
+    "outDir": "dist",
     "declaration": false,
     "removeComments": true,
     "noLib": false,
@@ -24,6 +23,7 @@
     "bin",
     "dist",
     "dev",
+    "tests",
     "node_modules",
     "typings/index.d.ts",
     "typings/modules"
