@@ -1,32 +1,53 @@
 # node-ts-seed
 
-Simple seed for your NodeJS projects made with typescript.
+Seed for your NodeJS applications made with TypeScript and leveraging Visual Studio Code debugging tools.
 
 ## Getting starting
 
 ```bash
-git clone https://github.com/ludohenin/node-ts-seed.git {my-project-folder}
+git clone git@github.com:ludohenin/node-ts-seed.git {my-project-folder}
 cd {my-project-folder}
 rm -rf .git
 git init
 npm install
 npm run typings -- -install
-npm run tsc -- -w
+
+npm test -- -w
 
 # Enjoy!
 ```
 
-__Files to update:__
-```
-- package.json (name, author, repository ...)
-- typings.json (name)
-```
+_Note that this project doesn't rely on any global dependencies._
 
-## Features
+## Files to update
 
-- vscode build-in build task setup (`build-watch` & `build.single`)
-- vscode debug configured
-- unit testing libraries (`mocha` & `chai`) that compiles on-the-fly, thanks to `ts-node`
+- `package.json` (name, author, repository ...)
+- `typings.json` (name)
+- `Readme.md`
+
+## npm scripts available
+
+- `build`: compiles the app into `dist` folder
+- `lint`: runs tslint for `src` and `tests` folders
+- `test`: runs mocha test without any comilation needed (uses `ts-node`)
+- `tsc`: proxy to the locally installed `typescript` package
+- `typings`: proxy to the locally installed `typings` package
+
+## tsconfig Files
+
+The seed comes with two tsconfig files to enable greater dev experience in Visual Studio Code by enabling debuggig from source while running `mocha` tests:
+
+- `tsconfig.json`: default configuration file used by IDE for type checking, Intellisense and development build (opt-in)
+- `tsconfig.src.json`: configuration file used to compile the app for distribution
+
+## Visula Studio Code Features
+
+- vscode build-in build tasks setup (`build` & `build.dist`)
+  - `build`: development build, sets `--watch` for continuous incremental compilation.
+    This tasks builds `src` and `tests` folder to `dev` which is used by vscode debugging tools.
+  - `build.dist` to compile the `src` folder only to `dist` folder.
+- vscode debug configured (`launch`)
+  - `launch.json` is set to run `mocha` test while debugging
 
 ## Running test
 
@@ -44,3 +65,7 @@ npm test -- --reporter list
 - [typings doc](https://github.com/typings/typings/tree/master/docs)
 - [@Basarat](https://twitter.com/basarat) - [Typescript Deep Dive ebook](https://basarat.gitbooks.io/typescript/content/docs/getting-started.html)
 - [All JS libraries should be authored in TypeScript](http://staltz.com/all-js-libraries-should-be-authored-in-typescript.html)
+
+## License
+
+MIT

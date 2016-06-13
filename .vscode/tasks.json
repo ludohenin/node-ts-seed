@@ -13,7 +13,7 @@
       "problemMatcher": ["$tsc-watch"]
     },
     {
-      "taskName": "build-dist",
+      "taskName": "build.dist",
       "suppressTaskName": true,
       "args": ["-p", "tsconfig.src.json"],
       "showOutput": "always",
