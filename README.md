@@ -56,6 +56,15 @@ The seed comes with two tsconfig files to enable greater dev experience in Visua
 npm test -- --reporter list
 ```
 
+## Note about tests fixtures
+
+Because asset files won't be copied to the compilation output directory, when using the debugging tools, their path must be absolute.
+
+```ts
+const FIXTURE_BASE_DIR = path.join(process.cwd(), 'tests', 'fixtures');
+const myFixtureFile = path.join(FIXTURE_BASE_DIR, 'fixture.yaml');
+```
+
 ## Resources
 
 - [What's new in TypeScript](https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript)
