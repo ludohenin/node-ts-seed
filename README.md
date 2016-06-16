@@ -29,7 +29,7 @@ _Note that this project doesn't rely on any global dependencies._
 
 - `build`: compiles the app into `dist` folder
 - `lint`: runs tslint for `src` and `tests` folders
-- `test`: runs mocha test without any comilation needed (uses `ts-node`)
+- `test`: runs mocha test without any compilation needed (uses `ts-node`)
 - `tsc`: proxy to the locally installed `typescript` package
 - `typings`: proxy to the locally installed `typings` package
 
@@ -40,7 +40,7 @@ The seed comes with two tsconfig files to enable greater dev experience in Visua
 - `tsconfig.json`: default configuration file used by IDE for type checking, Intellisense and development build (opt-in)
 - `tsconfig.src.json`: configuration file used to compile the app for distribution
 
-## Visula Studio Code Features
+## Visula Studio Code features
 
 - vscode build-in build tasks setup (`build` & `build.dist`)
   - `build`: development build, sets `--watch` for continuous incremental compilation.
